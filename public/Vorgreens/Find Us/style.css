@@ -1,0 +1,106 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: sans-serif;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header{
+  position: absolute;
+}
+
+.greens{
+  color: rgba(1, 163, 58, 1);
+}
+
+.navbar{
+  color: white;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 2px;
+}
+
+.navbar div{
+  margin: 0 480px 0 0;
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.navbar li{
+  display: inline;
+  padding: 10px 0;
+  margin: 0 15px;
+  position: relative;
+}
+
+.navbar a{
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  height: 4px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+  border-radius: 10px;
+}
+
+a:hover:after { 
+  width: 100%; 
+  left: 0; 
+}
+
+main{
+  position: absolute;
+  display: flex;
+  margin: 300px 10px;
+  color: white;
+}
+
+.place-box{
+  background-color: rgba(53, 52, 52, 1);
+  height: 500px;
+  width: 1258px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.places{
+  padding-top: 50px;
+  margin: 30px 140px 0 140px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.low{
+  margin: 0 10px 0 0;
+  justify-content: space-around;
+  display: flex;
+}
+
+.city{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}

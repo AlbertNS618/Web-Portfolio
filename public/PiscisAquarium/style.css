@@ -1,0 +1,260 @@
+:root{
+    --green: rgba(43, 177, 175, 1);
+    --greenish: rgba(109, 193, 144, 1);
+    --greeen: rgba(29, 115, 87, 1);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.look{
+    text-shadow: 5px 3px black;
+    -webkit-text-stroke: 2px black;
+    font-weight: 600;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow-x:  hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar{
+    background-color: var(--green);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li{
+    display: inline-block;
+    padding: 0 100px;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size:xx-large;
+    transition: 0.5s ease-out;
+}
+
+.navbar a:hover{
+    color: white;
+}
+
+.carousel{
+    position:relative;
+}
+
+.carousel img{
+    width: 100%;
+}
+
+.car{
+    margin-left: 717px;
+    padding: 20px 10px;
+    color:white;
+    position: absolute;
+    font-size: 71.6px;
+    text-align: right;
+    top: 30px;
+    right: 100px;
+}
+
+.discover{
+    text-align: center;
+    padding: 60px;
+    color: var(--green);
+    font-size: 64px;
+}
+
+.content{
+    justify-content: space-between;
+    margin-bottom: 200px;
+    display: flex;
+    margin: 0 20px 200px 20px;
+}
+
+.img-content{
+    height: 450px;
+    width: 620px;
+    border-radius: 20px;
+    box-shadow:0px 0px 0px 4px black;
+}
+
+.contents{
+    position: relative;
+    cursor: pointer;
+}
+
+.content-text{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color :var(--green);
+    font-size: 38px;
+}
+
+.img-cont{
+    height: 450px;
+    width: 620px;
+    border-radius: 20px;
+    filter:brightness(0.5);
+}
+
+.textchange{
+    height: 450px;
+    width: 620px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.384);
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.textchange:hover{
+    opacity: 1;
+}
+
+.para{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    color: white;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-right: 90px;
+}
+
+.learn-more{
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+    display: flex;
+    font-size: 30px;
+    background-color: var(--green);
+    padding: 15px 10px;
+    border-radius: 10px;
+    justify-content: center;
+    font-weight: 600;
+}
+
+.learn-more img{
+    width: 35px;
+    margin-left: 10px;
+}
+
+.join{
+    display: flex;
+    position: relative;
+}
+
+.Join{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.help{
+    position: absolute;
+    color: white;
+    margin-top: 140px;
+    margin-left: 30px;
+    font-weight: 50;
+    font-size: 28px;
+    margin-right: 700px;
+}
+
+.join-us{
+    align-items: center;
+    position: absolute;
+    background-color: var(--green);
+    padding: 8px 54px;
+    border-radius: 43px;
+    top: 50%;
+    right: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 40px;
+    margin-right: 50px;
+    box-shadow: 0 9px 13px rgba(0,0,0,0.5);
+    transition: 0.3s;
+}
+
+.join-us:hover{
+    box-shadow:inset 0px 0px 0px 3px var(--green);
+    background-color: white;
+    color: black;
+    text-shadow: 6px 3px var(--green);
+    -webkit-text-stroke: 2px var(--green);
+}
+
+.footer{
+    display: flex;
+    background-color: var(--greeen);
+    height: 220px;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.footer ul div{
+    color: white;
+    text-shadow: 6px 4px black;
+    -webkit-text-stroke: 2px black;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.logo{
+    color: var(--greenish);
+    font-size: 53px;
+    padding: 20px;
+}
+
+.footer ul{
+    list-style: none;
+}
+
+.footer a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.left-ul{
+    position: absolute;
+    left: 350px;
+    top: 90px;
+}
+
+.left-ul li{
+    margin: 10px 0 0 0;
+}
+
+.right-ul{
+    position: absolute;
+    right: 350px;
+    top: 90px;
+}
+
+.right-ul li{
+    margin: 10px 0 0 0;
+}
